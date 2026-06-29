@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 8000;
 const app = express();
 
 app.use(cors({
-    origin : ["https://localhost:5173","https://quiz-app-q6hn.vercel.app/"],
+    origin : ["https://quiz-app-q6hn.vercel.app"],
     credentials : true
 }));
 app.use(express.json());
