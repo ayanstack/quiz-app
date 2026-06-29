@@ -1,9 +1,8 @@
 import axiosInstance from './axiosInstance';
 
-let baseUrl = "https://quiz-app1-kc9y.onrender.com/api"
 
 const submitAttempt = async (attemptData) => {
-  const response = await axiosInstance.post(baseUrl + '/attempts', attemptData);
+  const response = await axiosInstance.post('/attempts', attemptData);
   return response.data;
 };
 
